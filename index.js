@@ -44,7 +44,7 @@ Prism.languages.twig2 = {
       twigFilter: {
         pattern: /(\|{1,1})\w+/,
         lookbehind: true,
-      }
+      },
       punctuation: /[^\w\s]+/,
     },
   },
