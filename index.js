@@ -1,5 +1,5 @@
 Prism.languages.twig2 = {
-  comment: /<!--[\s\S]*?-->/,
+  comment: /(<!--[\s\S]*?-->)|({#[\s\S]*?#})/,
   prolog: /<\?[\s\S]+?\?>/,
   doctype: /<!DOCTYPE[\s\S]+?>/i,
   cdata: /<!\[CDATA\[[\s\S]*?]]>/i,
@@ -19,7 +19,7 @@ Prism.languages.twig2 = {
           twigVariable: {
             pattern: /{{.*?}}/,
             inside: {
-              twigPunctuation: /[^\w\s]+/,
+              punctuation: /[^\w\s]+/,
             },
           },
         },
@@ -29,10 +29,10 @@ Prism.languages.twig2 = {
   twigVariable: {
     pattern: /{{.*?}}/,
     inside: {
-      twigPunctuation: /[^\w\s]+/,
+      punctuation: /[^\w\s]+/,
     },
   },
-  twigFunction: {
+  twigTag: {
     pattern: /{%.*%}/,
     inside: {
       twigKeywords: /in|with|only|as|is|and|\sor|not|b-and|b-or|b-xor|starts|ends|matches/,
@@ -40,7 +40,12 @@ Prism.languages.twig2 = {
         pattern: /({%\s*)\w+/,
         lookbehind: true,
       },
-      twigPunctuation: /[^\w\s]+/,
+      twigFunction: /\w+(?=\()/,
+      twigFilter: {
+        pattern: /(\|{1,1})\w+/,
+        lookbehind: true,
+      }
+      punctuation: /[^\w\s]+/,
     },
   },
 };

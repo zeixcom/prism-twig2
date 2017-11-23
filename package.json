@@ -14,7 +14,6 @@
     "prism.js",
     "twig"
   ],
-  "author": "Marcel Bührig <marcel.buehrig@zeix.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zeixcom/prism-twig2/issues"

@@ -1,20 +1,20 @@
-.language-twig2 .token.twigVariable {
+.language-twig2 .token.twigVariable,
+.language-twig2 .token.twigTag  {
   color: #FF961D;
 }
 
-.language-twig2 .token.twigVariable .token.twigPunctuation {
-  color: #FCE3C7;
-}
-
-.language-twig2 .token.twigFunction {
-  color: #ffa0e2;
-}
-
-.language-twig2 .token.twigFunction .token.twigTagName {
+.language-twig2 .token.twigTagName {
   color: #66d9ef;
 }
 
-.language-twig2 .token.twigFunction .token.twigPunctuation,
-.language-twig2 .token.twigFunction .token.twigKeywords {
-  color: #CFF7FF;
+.language-twig2 .twigKeywords {
+  color: #f8f8f2;
+}
+
+.language-twig2 .twigFunction {
+  color: #edb1dd;
+}
+
+.language-twig2 .twigFilter {
+  color: #edbaff;
 }
