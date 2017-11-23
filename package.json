@@ -1,0 +1,23 @@
+{
+  "name": "prism-twig2",
+  "version": "1.0.0",
+  "description": "A prism.js extension to get better coverage for twig, by extending html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mbuehrig@github.com/zeixcom/prism-twig2.git"
+  },
+  "keywords": [
+    "prism.js",
+    "twig"
+  ],
+  "author": "Marcel Bührig <marcel.buehrig@zeix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeixcom/prism-twig2/issues"
+  },
+  "homepage": "https://github.com/zeixcom/prism-twig2#readme"
+}
