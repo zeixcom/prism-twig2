@@ -4,7 +4,7 @@ Prism.languages.twig2 = {
   doctype: /<!DOCTYPE[\s\S]+?>/i,
   cdata: /<!\[CDATA\[[\s\S]*?]]>/i,
   tag: {
-    pattern: /(<[a-zA-Z]+\s[\w="-{}\s\v]*?>|<\/.*?>)/,
+    pattern: /(<[a-zA-Z]+\s[\w="-{}\s\v|]*?>|<\/.*?>)/,
     inside: {
       'attr-name': {
         pattern: /[\w-_]*?=/,
@@ -35,7 +35,7 @@ Prism.languages.twig2 = {
   twigTag: {
     pattern: /{%.*%}/,
     inside: {
-      twigKeywords: /in|with|only|as|is|and|\sor|not|b-and|b-or|b-xor|starts|ends|matches/,
+      twigKeywords: /(in|with|only|as|is|and|\sor|not|b-and|b-or|b-xor|starts|ends|matches)\s/,
       twigTagName: {
         pattern: /({%\s*)\w+/,
         lookbehind: true,
