@@ -1,6 +1,6 @@
 {
   "name": "prism-twig2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A prism.js extension to get better coverage for twig, by extending html",
   "main": "index.js",
   "scripts": {
